@@ -1,0 +1,4 @@
+{
+    "mqtt_server": "mqtt2.mianos.com",
+    "sensor_name": "radar/hall"
+}

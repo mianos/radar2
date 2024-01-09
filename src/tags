@@ -1,0 +1,109 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+COPYING	mqtt.cpp	/^    COPYING,$/;"	e	enum:State	file:
+Cleared	lep.h	/^  virtual void Cleared() {$/;"	f	class:LocalEP
+DecoderState	ld2450.h	/^    enum DecoderState {$/;"	g	class:LD2450
+Detected	lep.h	/^  virtual void Detected(Value *vv) {$/;"	f	class:LocalEP
+DetectionState	radar.h	/^    enum DetectionState {$/;"	g	class:RadarSensor
+EventProc	events.h	/^class EventProc {$/;"	c
+LD2450	ld2450.h	/^    LD2450(EventProc* ep, std::shared_ptr<SettingsManager> settings) : RadarSensor(ep, settings), SerialR(1) {$/;"	f	class:LD2450
+LD2450	ld2450.h	/^class LD2450 : public RadarSensor {$/;"	c
+LocalEP	lep.h	/^  LocalEP(std::shared_ptr<RadarMqtt> mqtt, std::shared_ptr<SettingsManager> settings) : mqtt(mqtt), settings(settings) {$/;"	f	class:LocalEP
+LocalEP	lep.h	/^class LocalEP : public EventProc {$/;"	c
+NOT_COPYING	mqtt.cpp	/^    NOT_COPYING,$/;"	e	enum:State	file:
+NoTarget	events.h	/^struct NoTarget : public Value {$/;"	s
+None	settings.h	/^    None = 0,$/;"	m	class:SettingsManager::SettingChange
+PROCESSING_DATA	ld2450.h	/^        PROCESSING_DATA,$/;"	e	enum:LD2450::DecoderState
+RadarMqtt	mqtt.cpp	/^RadarMqtt::RadarMqtt(std::shared_ptr<SettingsManager> settings)$/;"	f	class:RadarMqtt
+RadarMqtt	mqtt.h	/^struct RadarMqtt {$/;"	s
+RadarSensor	radar.cpp	/^RadarSensor::RadarSensor(EventProc* ep, std::shared_ptr<SettingsManager> settings) : ep(ep), settings(settings) {}$/;"	f	class:RadarSensor
+RadarSensor	radar.h	/^class RadarSensor {$/;"	c
+Range	events.h	/^  Range(float x, float y, float speed, int reference=0) : x(x), y(y), speed(speed), reference(reference) {}$/;"	f	struct:Range
+Range	events.h	/^struct Range : public Value {$/;"	s
+SEARCH_FOR_START	ld2450.h	/^        SEARCH_FOR_START,$/;"	e	enum:LD2450::DecoderState
+STATE_CLEARED_ONCE	radar.h	/^        STATE_CLEARED_ONCE$/;"	e	enum:RadarSensor::DetectionState
+STATE_DETECTED	radar.h	/^        STATE_DETECTED,$/;"	e	enum:RadarSensor::DetectionState
+STATE_DETECTED_ONCE	radar.h	/^        STATE_DETECTED_ONCE,$/;"	e	enum:RadarSensor::DetectionState
+STATE_NOT_DETECTED	radar.h	/^        STATE_NOT_DETECTED,$/;"	e	enum:RadarSensor::DetectionState
+SerialR	ld2450.h	/^    HardwareSerial SerialR;$/;"	m	class:LD2450
+SettingChange	settings.h	/^  enum class SettingChange {$/;"	c	struct:SettingsManager
+SettingsManager	settings.cpp	/^SettingsManager::SettingsManager() {$/;"	f	class:SettingsManager
+SettingsManager	settings.h	/^struct SettingsManager {$/;"	s
+State	mqtt.cpp	/^enum State {$/;"	g	file:
+SysProvEvent	provision.cpp	/^void SysProvEvent(arduino_event_t *sys_event)$/;"	f
+TOTAL_END_BYTES	ld2450.h	/^    static const int TOTAL_END_BYTES = 2;$/;"	m	class:LD2450
+TOTAL_TARGET_BYTES	ld2450.h	/^    static const int TOTAL_TARGET_BYTES = 24;  \/\/ 8 bytes for each of 3 targets$/;"	m	class:LD2450
+TrackingUpdate	lep.h	/^  virtual void TrackingUpdate(Value *vv) {$/;"	f	class:LocalEP
+VERIFY_END	ld2450.h	/^        VERIFY_END$/;"	e	enum:LD2450::DecoderState
+Value	events.h	/^struct Value {$/;"	s
+WAITING_FOR_FLUSH	mqtt.cpp	/^    WAITING_FOR_FLUSH$/;"	e	enum:State	file:
+callback	mqtt.cpp	/^void RadarMqtt::callback(char* topic_str, byte* payload, unsigned int length) {$/;"	f	class:RadarMqtt
+client	mqtt.h	/^  PubSubClient client;$/;"	m	struct:RadarMqtt
+currentState	ld2450.h	/^    DecoderState currentState = SEARCH_FOR_START;$/;"	m	class:LD2450
+currentState	mqtt.cpp	/^} currentState = NOT_COPYING;$/;"	v	typeref:enum:State
+currentState	radar.h	/^    DetectionState currentState = STATE_NOT_DETECTED;$/;"	m	class:RadarSensor
+dataByteCount	ld2450.h	/^    int dataByteCount = 0;$/;"	m	class:LD2450
+dayMillis	main.cpp	/^const unsigned long dayMillis = 24UL * 60 * 60 * 1000; \/\/ Milliseconds in a day$/;"	v
+decodeCoordinate	ld2450.h	/^    int16_t decodeCoordinate(uint8_t lowByte, uint8_t highByte) {$/;"	f	class:LD2450
+decodeSpeed	ld2450.h	/^    int16_t decodeSpeed(uint8_t lowByte, uint8_t highByte) {$/;"	f	class:LD2450
+detectionTimeout	settings.h	/^  int detectionTimeout = 60000;$/;"	m	struct:SettingsManager
+endSeqCount	ld2450.h	/^    int endSeqCount = 0;$/;"	m	class:LD2450
+ep	radar.h	/^    EventProc* ep;$/;"	m	class:RadarSensor
+espClient	mqtt.h	/^  WiFiClient espClient;$/;"	m	struct:RadarMqtt
+etype	events.h	/^  virtual const char* etype() const { return "und"; }$/;"	f	struct:Value
+fillJsonDocument	settings.cpp	/^void SettingsManager::fillJsonDocument(JsonDocument& doc) {$/;"	f	class:SettingsManager
+flushDelay	mqtt.cpp	/^const unsigned long flushDelay = 1000; \/\/ 1000 ms flush delay$/;"	v
+getConfigOrDefault	settings.cpp	/^bool getConfigOrDefault(JsonDocument& doc, const char* key, T& value) {$/;"	f
+getMacAddress	provision.cpp	/^String getMacAddress() {$/;"	f
+get_decoded_radar_data	ld2450.h	/^    std::vector<std::unique_ptr<Value>>  get_decoded_radar_data() {$/;"	f	class:LD2450
+get_main	events.h	/^  virtual float get_main() const { return 0.0; }$/;"	f	struct:Value
+get_main	events.h	/^  virtual float get_main() { return speed; }$/;"	f	struct:Range
+get_power	events.h	/^  virtual float get_power() const { return 0.0; }$/;"	f	struct:Value
+handle	mqtt.cpp	/^void RadarMqtt::handle() {$/;"	f	class:RadarMqtt
+interval	mqtt.h	/^  const unsigned long interval = 250;  \/\/ Interval in milliseconds (1000 ms \/ 4 = 250 ms)$/;"	m	struct:RadarMqtt
+isAllDistancesZero	ld2450.h	/^    bool isAllDistancesZero() {$/;"	f	class:LD2450
+lastCopyTime	mqtt.cpp	/^unsigned long lastCopyTime = 0;$/;"	v
+lastDetectionTime	radar.h	/^    uint32_t lastDetectionTime = 0;$/;"	m	class:RadarSensor
+lastInvokeTime	main.cpp	/^unsigned long lastInvokeTime = 0; \/\/ Store the last time you called the function$/;"	v
+lastTimeCalled	mqtt.h	/^  unsigned long lastTimeCalled = 0;  \/\/ Store the last time the function was called$/;"	m	struct:RadarMqtt
+lastTrackingUpdateTime	lep.h	/^  uint32_t lastTrackingUpdateTime = 0;$/;"	m	class:LocalEP
+loadFromDocument	settings.cpp	/^std::vector<SettingsManager::SettingChange> SettingsManager::loadFromDocument(JsonDocument& doc) {$/;"	f	class:SettingsManager
+loop	main.cpp	/^void loop() {$/;"	f
+mqtt	lep.h	/^  std::shared_ptr<RadarMqtt> mqtt;$/;"	m	class:LocalEP
+mqtt	main.cpp	/^std::shared_ptr<RadarMqtt> mqtt;$/;"	v
+mqttPort	settings.h	/^  int mqttPort = 1883;$/;"	m	struct:SettingsManager
+mqttServer	settings.h	/^  String mqttServer = "mqtt2.mianos.com";$/;"	m	struct:SettingsManager
+mqtt_track	mqtt.cpp	/^void RadarMqtt::mqtt_track(const Value *vv) {$/;"	f	class:RadarMqtt
+mqtt_update_presence	mqtt.cpp	/^void RadarMqtt::mqtt_update_presence(bool entry, const Value *vv) {$/;"	f	class:RadarMqtt
+print	events.h	/^  virtual void print() const { Serial.printf("un-overridden '%s'\\n", etype()); }$/;"	f	struct:Value
+printSettings	settings.cpp	/^void SettingsManager::printSettings() {$/;"	f	class:SettingsManager
+process	radar.cpp	/^void RadarSensor::process(float minPower) {$/;"	f	class:RadarSensor
+prov_end	provision.cpp	/^int prov_end = 0;$/;"	v
+prov_err	provision.cpp	/^int prov_err = 0;$/;"	v
+prov_on_flag	provision.cpp	/^int prov_on_flag = 0;$/;"	v
+radarSensor	main.cpp	/^RadarSensor *radarSensor;$/;"	v
+reconnect	mqtt.cpp	/^bool RadarMqtt::reconnect() {$/;"	f	class:RadarMqtt
+reference	events.h	/^  int reference;$/;"	m	struct:Range
+reset_provisioning	provision.cpp	/^void        reset_provisioning() {$/;"	f
+rr	events.h	/^inline double rr(double value) {$/;"	f
+sensorName	settings.h	/^  String sensorName = "radar2";$/;"	m	struct:SettingsManager
+settings	lep.h	/^  std::shared_ptr<SettingsManager> settings;$/;"	m	class:LocalEP
+settings	main.cpp	/^std::shared_ptr<SettingsManager> settings;$/;"	v
+settings	mqtt.h	/^  std::shared_ptr<SettingsManager> settings;$/;"	m	struct:RadarMqtt
+settings	radar.h	/^  std::shared_ptr<SettingsManager> settings;$/;"	m	class:RadarSensor
+setup	main.cpp	/^void setup() {$/;"	f
+speed	events.h	/^  float speed;$/;"	m	struct:Range
+startSeqCount	ld2450.h	/^    int startSeqCount = 0;$/;"	m	class:LD2450
+targetData	ld2450.h	/^    uint8_t targetData[TOTAL_TARGET_BYTES];$/;"	m	class:LD2450
+toJson	events.h	/^  virtual void toJson(JsonDocument &doc) const {$/;"	f	struct:Range
+toJson	events.h	/^  virtual void toJson(JsonDocument &doc) const {$/;"	f	struct:Value
+tracking	settings.h	/^  int tracking = 0;$/;"	m	struct:SettingsManager
+tz	settings.h	/^  String tz = "AEST-10AEDT,M10.1.0,M4.1.0\/3";$/;"	m	struct:SettingsManager
+wifiClient	main.cpp	/^WiFiClient wifiClient;$/;"	v
+wifi_connect	provision.cpp	/^void wifi_connect(const char *pname) {$/;"	f
+x	events.h	/^  float x = 0.0;$/;"	m	struct:Range
+y	events.h	/^  float y = 0.0;$/;"	m	struct:Range
